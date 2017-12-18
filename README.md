@@ -7,6 +7,11 @@ Will generate registration/registration-rest/target/registration.war that you ca
 
 See it here in action here: 
 https://www.screencast.com/t/Zpi8dFUbKJ
+
+You can query by properties adding query params like this:
+
+http://localhost:8080/registration/rest/students?field=lastName&value=Rocabado
+
 # Frameworks
 Jersey 2.x was used to develop the REST endpoints
 Junit 4. was used to develop core layer unit test
