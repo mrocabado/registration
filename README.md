@@ -5,7 +5,7 @@ Run this @ root folder
 mvn clean package
 Will generate registration/registration-rest/target/registration.war that you can deploy in a servlet container. I've tested with Tomat 8
 
-See it here in action here: 
+See it in action here: 
 https://www.screencast.com/t/Zpi8dFUbKJ
 
 You can query by properties adding query params like this:
@@ -13,9 +13,9 @@ You can query by properties adding query params like this:
 http://localhost:8080/registration/rest/students?field=lastName&value=Rocabado
 
 # Frameworks
-Jersey 2.x was used to develop the REST endpoints
-Junit 4. was used to develop core layer unit test
-Swagger was used to generate the REST documentation and testing pages
+- Jersey 2.x was used to develop the REST endpoints
+- Junit 4. was used to develop core layer unit test
+- Swagger was used to generate the REST documentation and testing pages
 
 
 # Design considerations
@@ -30,12 +30,12 @@ See here: https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.
 Do not accept or return null from methods. Do not set variables to null.
 
 See here: https://www.cio.com/article/2433223/net/the-a-z-of-programming-languages--c-.html
+
 "50% of the bugs that people run into today, coding with C# in our platform, and the same is true of Java for that matter, are probably null reference exceptions"
 
 ### Unit test
-Most of registration-core code is covered by unit test.
+Most of *registration-core* code is covered by unit test.
 
-Most of registration-core code is covered by unit test.
 ### Clean code
 - Try to keep methods short, simple and in the same asbtraction level. I don't think there is a method that fills an entire screen.
 - Choose descriptive names for indentifiers.
@@ -45,8 +45,8 @@ Most of registration-core code is covered by unit test.
 - Try to use funtional like constructs instead. For example, Optional.ifPresent() instead of *if*. Other than the Null checks guards, I don't think there are other conditional structures in the code.
 
 ### Use patterns when required
--  Factory method user inteod or open accedd to constructors.
--  Command patter is used to model application UseCases
+-  Factory method used instead of open access to constructors.
+-  Command pattern is used to model application UseCases
 
 See: https://jlordiales.me/2012/12/26/static-factory-methods-vs-traditional-constructors/
 # Known issues
